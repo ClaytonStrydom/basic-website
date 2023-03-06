@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main {
+    font-family: "Heebo", sans-serif;
+}
+  
+.landing {
+    min-height: 100vh;
+    background: url("./images/vaccine.jpg");
+    background-size: cover;
+    padding: 0rem 5rem;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 10vh;
+}
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+.nav-links li {
+    padding-left: 10rem;
+    font-size: 1.2rem;
+}
+#logo {
+    font-family: "Lobster", cursive;
+    font-weight: lighter;
+    font-size: 2rem;
+}
+  
+.big-text {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    font-size: 5rem;
+    font-family: "Lobster", cursive;
+    color: rgb(61, 61, 61);
+}
+  
+.intro {
+    background: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.slider {
+    background: rgb(187, 157, 143);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateY(100%);
+}
+  
+.intro-text {
+    color: rgb(233, 233, 233);
+    font-family: "Lobster", cursive;
+    font-size: 3rem;
+}
+  
+.hide {
+    background: black;
+    overflow: hidden;
+}
+  
+.hide span {
+    transform: translateY(100%);
+    display: inline-block;
+}
+
+.line {
+    height:2px;
+    width: 25.5rem;
+    border-color: black;
+    background-color:rgb(0, 0, 0);
+    transform: translateX(60%);
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-left: 7px;
+}
+
+.content {
+    width: 100%;
+    transform: translateY(10%);
+}
+ 
+.title {
+    font-size: 3em;
+    font-weight: 600;
+    font-family: 'Lobster', cursive;
+    margin-left: 255px;
+}
+
+.sub__title {
+    font-size: 1.5em;
+    font-weight: 550;
+    margin-left: 255px;
+    z-index: -10;
+}
+
+.form__item {
+    display: flex;
+    flex-direction: column;
+    margin-left: 255px;
+}
+
+.form__item > * {
+    align-self: flex-start;
+}
+
+.form__label {
+    font-weight: 550;
+    padding: 3px 0;
+}
+
+.form__input {
+    -webkit-appearance: none;
+
+    width: 400px;
+    height: 50px;
+
+    padding: 0.8em;
+    font-size: 0.9em;
+
+    font-family: sans-serif;
+
+    outline: none;
+    border: 1px solid #ddd;
+
+    margin-bottom: 3px;
+    border-radius: 4px;
+    background: #dfdfdf;
+    transition: background 0.25s, border-color 0.25s, color 0.25s;
+}
+
+.form__input:focus {
+    background: #ffffff;
+}
+
+.form__input::placeholder {
+    color: #bbbbbb;
+}
+
+.form__input--error {
+    color: #d50000;
+    background: #fff8f8;
+    border-color: #d50000;
+}
+
+.form__input--error::placeholder {
+    color: #ffbfbf;
+}
+
+.form__error {
+    padding-top: 10px;
+    color: #d50000;
+    font-size: 0.9em;
+    visibility: hidden;
+}
+
+.form__input--error + .form__error {
+    visibility: visible;
+}
+
+button {
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    border-radius: 25px;
+    font-weight: bolder;
+    border: 2px solid #00a070;
+    background: transparent;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    filter: saturate(250%);
+    margin-bottom: 20px;
+}
+
+button span {
+    background: #00a070;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+button:hover span{
+    width: 100%;
+}
+
+button:hover {
+    border: none;
+}
+
+::-webkit-scrollbar {
+    width: 20px;
+}
+  
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+  
+::-webkit-scrollbar-thumb {
+    background: #00a070;
+    border-radius: 10px;
+}
+
+.centered {
+    display: flex;
+    flex-direction: column;
+    margin-left: 255px;
+}
+
+#phase {
+    display: inline-block;
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Vaccine Regestrations</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link href="main.css" rel="stylesheet">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+            <script src="./app.js"></script>
+            <script src="./phase.js"></script>
+    </head>
+    <body>
+        <main name="Regestrations">
+            <section class="landing">
+              <nav>
+                <h1 id="logo">Covid-19 Vaccinations</h1>
+                <ul class="nav-links">
+                  <li>Home</li>
+                  <li>Contact</li>
+                  <li>About</li>
+                </ul>
+              </nav>
+              <div class="content">
+                <div class ="title">
+                    Vaccine Registration
+                </div>
+                <div class="sub__title">
+                    <script>
+                      document.write(today);
+                    </script>
+                </div>
+                
+                <hr class="line">
+                <form action="">
+
+                <div class="form__item">
+                    <label for="fullName" class = "form__label">Full Name:</label>
+                    <input type="text" class = "form__input" name = "fullName" id = "fullName" placeholder = "Enter your Full Name...">
+                    <span class="form__error">A sample error message</span>
+                </div>
+                <div class="form__item">
+                    <label for="number" class = "form__label">Age:</label>
+                    <input type="number" class = "form__input" name = "age" id = "age" placeholder = "Enter your Age...">
+                    <span class="form__error">A sample error message</span>
+                </div>
+                <div class="form__item">
+                    <label for="phoneNumber" class = "form__label">Phone Number:</label>
+                    <input type="tel" class = "form__input" name = "phoneNumber" id = "phoneNumber" placeholder = "Enter your Phone Number...">
+                    <span class="form__error">A sample error message</span>
+                </div>
+                <div class="form__item">
+                    <label for="email" class = "form__label">Email:</label>
+                    <input type="email" class = "form__input" name = "email" id = "email" placeholder = "Enter your Email Address...">
+                    <span class="form__error">A sample error message</span>
+                </div>
+                <div class="centered">
+                        <button type="submit" id="button"><span></span>Register</button>
+                </div>
+                <div>
+                  <p id="phase"></p>
+                </div>
+              </form>
+            </div>
+            
+            </section>
+            
+          </main>
+          <div class="intro">
+            <div class="intro-text">
+              <h1 class="hide">
+                <span class="text">Protect Yourself</span>
+              </h1>
+              <h1 class="hide">
+                <span class="text">Protect Others</span>
+              </h1>
+              <h1 class="hide">
+                <span class="text">Get Vaccinated</span>
+              </h1>
+            </div>
+          </div>
+          <div class="slider"></div>
+        <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"
+        integrity="sha512-GQ5/eIhs41UXpG6fGo4xQBpwSEj9RrBvMuKyE2h/2vw3a9x85T1Bt0JglOUVJJLeyIUl/S/kCdDXlE/n7zCjIg=="
+        crossorigin="anonymous"
+        ></script>
+        <script src="./animations.js"></script>
+        <script src="./db.js"></script>
+    </body>
+
+</html>
